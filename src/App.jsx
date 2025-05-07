@@ -23,14 +23,14 @@ const App = () => {
         <div className="w-full h-[500px]">
           <LiveCameraFeed />
         </div>
-        <div className="flex justify-between gap-4">
-          <div className="w-1/3">
+        <div className="flex justify-between gap-4 rounded-md ">
+          <div className="w-1/3 bg-white rounded-md">
             <QuestionList
               questions={interviewQuestions}
               currentQuestionIndex={currentQuestionIndex}
             />
           </div>
-          <div className="w-2/3 flex bg-white p-4">
+          <div className="w-2/3 flex rounded-md bg-white p-4">
             <div className="w-2/5">
               <AIScore score={aiScore} />
             </div>

@@ -19,7 +19,7 @@ const QuestionList = () => {
   };
 
   return (
-    <div className="relative p-4 bg-white">
+    <div className="relative p-4 bg-white rounded-md">
       <div className='flex justify-between px-2 mb-5 items-center'>
         <h3 className="text-2xl font-semibold">Questions List</h3>
         <RiErrorWarningLine className="text-blue-500 text-2xl " />

@@ -35,7 +35,7 @@ const ChatWithAI = () => {
     <h3 className="text-lg font-semibold mb-2">Chat with AI</h3>
     <div ref={chatContainerRef} className="overflow-y-auto flex-grow mb-2  p-2 ">
       {messages.map((msg, index) => (
-        <div key={index} className={`mb-2 p-2 rounded-md ${msg.sender === 'user' ? 'bg-blue-100 text-blue-800 self-end' : 'bg-gray-100 text-gray-800 self-start'}`}>
+        <div key={index} className={`mb-2 p-2 text-sm w-2/3 ${msg.sender === 'user' ? 'bg-blue-100 text-blue-800 ml-20 self-end rounded-tl-md rounded-tr-md rounded-bl-md' : 'bg-gray-100 text-gray-800 self-start rounded-tl-md rounded-tr-md rounded-br-md'}`}>
           {msg.text}
         </div>
       ))}
